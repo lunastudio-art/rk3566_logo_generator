@@ -57,7 +57,7 @@ jobs:
         # Clone the correct kernel repo for this kernel build
         if [[ "${{ github.event.inputs.device_unit }}" == "RG353" ]]; then
            whichgit="RG353VKernel"
-           git clone --depth=1 --recursive https://github.com/christianhaitian/${whichgit}.git
+           git clone --depth=1 --recursive https://github.com/lunastudio-art/${whichgit}.git
         elif [[ "${{ github.event.inputs.device_unit }}" == "RG503" ]]; then
            whichgit="rg503Kernel"
            git clone --depth=1 --recursive https://github.com/christianhaitian/${whichgit}.git
